@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate
+  Navigate,
 } from "react-router-dom";
 import Navbar from "./Navbar";
 import Auth from "./Auth";
@@ -13,7 +13,6 @@ import ErrorPage from "./ErrorPage";
 // import Footer from "./Footer";
 
 const Path = () => {
-  
   const local = localStorage.getItem("login");
 
   const [isAuthenticate, setAuthenticate] = useState(local);
@@ -22,13 +21,10 @@ const Path = () => {
     console.log(local);
   }, [local]);
 
-
-
-  const handleLogin = ({ name, age, gender, Password , email }) => {
-    
+  const handleLogin = ({ name, age, gender, Password, email }) => {
     localStorage.setItem(
       "Name",
-      JSON.stringify({ name, age, gender, Password , email })
+      JSON.stringify({ name, age, gender, Password, email })
     );
     setAuthenticate(true);
     // auth();
@@ -37,13 +33,13 @@ const Path = () => {
   };
 
   // useEffect(() => {
-    // const isAuthenticate1 = localStorage.getItem("login");
-    // isAuthenticate1 ? setAuthenticate(true) : setAuthenticate(false);
-    // console.log(" isAuthenticate1",isAuthenticate1)
+  // const isAuthenticate1 = localStorage.getItem("login");
+  // isAuthenticate1 ? setAuthenticate(true) : setAuthenticate(false);
+  // console.log(" isAuthenticate1",isAuthenticate1)
   // }, []);
 
   console.log("LOCAL", local);
-  
+
   // useEffect(() => {
   //   localStorage.setItem("login", isAuthenticate);
   // }, [isAuthenticate]);
@@ -52,16 +48,16 @@ const Path = () => {
 
   return (
     <div>
-      <Router basename="/foodrecipe">
+      <Router basename="/firebase-foodsite">
         <Navbar setAuthenticate={setAuthenticate} />
         <Routes>
           <Route
-            path="/foodrecipe"
+            path="/firebase-foodsite"
             element={
               isAuthenticate ? (
                 <Navigate to="/app" />
               ) : (
-                <Auth  handleLogin={handleLogin}/>
+                <Auth handleLogin={handleLogin} />
               )
             }
           />
@@ -71,7 +67,7 @@ const Path = () => {
               isAuthenticate ? (
                 <Navigate to="/app" />
               ) : (
-                <Auth handleLogin={handleLogin}  />
+                <Auth handleLogin={handleLogin} />
               )
             }
           />
@@ -81,7 +77,7 @@ const Path = () => {
               isAuthenticate ? (
                 <Navigate to="/app" />
               ) : (
-                <Auth handleLogin={handleLogin}  />
+                <Auth handleLogin={handleLogin} />
               )
             }
           />
@@ -90,7 +86,7 @@ const Path = () => {
             path="/app"
             element={
               isAuthenticate ? (
-                <App  logoutx={() => setAuthenticate(false)} />
+                <App logoutx={() => setAuthenticate(false)} />
               ) : (
                 <Navigate to="/auth" />
               )
