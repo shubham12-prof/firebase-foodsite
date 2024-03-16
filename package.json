@@ -1,5 +1,6 @@
 {
   "name": "foodsite",
+  "homepage": "https://shubham12-prof.github.io/firebase-foodsite",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
