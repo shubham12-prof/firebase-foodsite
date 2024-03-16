@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/firebase-foodsite/static/css/main.e8fdfa76.css",
+    "main.css": "/firebase-foodsite/static/css/main.1d8c95ad.css",
     "main.js": "/firebase-foodsite/static/js/main.273bc330.js",
     "static/media/PageNotFound.svg": "/firebase-foodsite/static/media/PageNotFound.bdf1c60c297dc6528f56fe6a382dacdf.svg",
     "static/media/NoResultIcon.svg": "/firebase-foodsite/static/media/NoResultIcon.640580f77da6827bfa0824986caf1910.svg",
@@ -10,11 +10,11 @@
     "static/media/Gmail.svg": "/firebase-foodsite/static/media/Gmail.582d62f4e20262b2d82ee0579c1c0d5a.svg",
     "static/media/Age.svg": "/firebase-foodsite/static/media/Age.720abf9bc59c0a146700909bb15e80c6.svg",
     "static/media/Gender.svg": "/firebase-foodsite/static/media/Gender.a255b63df839352291c7dc7f5ec09248.svg",
-    "main.e8fdfa76.css.map": "/firebase-foodsite/static/css/main.e8fdfa76.css.map",
+    "main.1d8c95ad.css.map": "/firebase-foodsite/static/css/main.1d8c95ad.css.map",
     "main.273bc330.js.map": "/firebase-foodsite/static/js/main.273bc330.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8fdfa76.css",
+    "static/css/main.1d8c95ad.css",
     "static/js/main.273bc330.js"
   ]
 }
