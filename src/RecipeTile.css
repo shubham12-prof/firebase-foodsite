@@ -1,0 +1,43 @@
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+.skeleton-img {
+  width: 300px;
+  height: 100px;
+}
+.skeleton-text {
+  max-width: 280px;
+  height: 40px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+.recipe_img {
+  border: 0px 0px 0px 0px;
+  width: 329px;
+  height: 227px;
+  margin-top: 40px;
+  margin-left: 0.7rem;
+}
+.recipe_label {
+  max-width: 380px;
+  margin-top: 5px;
+  height: 20px;
+  margin-left: 0.7rem;
+}
+
+.recipe_dishtype {
+  padding: 4px 10px;
+  font-size: 20px;
+  font-weight: 400;
+  width: 300px;
+  margin-left: 0.7rem;
+}
+
+
